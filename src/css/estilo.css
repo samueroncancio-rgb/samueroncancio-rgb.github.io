@@ -26,6 +26,17 @@ h2{
 p{
     font-size: 18px;
 }
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+}
+/*clases globales*/
+.title{
+    text-align: center;
+    margin: 40px 0 ;
+}
 .header{
     width: 100%;
     position: fixed;
@@ -100,6 +111,20 @@ p{
 
 
 }
+.link_social_media:nth-child(1){
+    background-color:#1877f2;
+}
+.link_social_media:nth-child(2){
+    background-image: linear-gradient(45deg, 
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #fcaf45);
+}
+.link_social_media:nth-child(3){
+    background-color:#181717;
+}
 .btn_contact{
     display: inline-block;
     width: fit-content;
@@ -126,9 +151,8 @@ p{
     border-radius: 50%;
 }
 /*biografia seccion*/
-.biografia{
-    padding: 80px;
-}
+
+
 .biografia_section{
     background-color:#eee;
     padding: 50px 20px;
@@ -142,9 +166,90 @@ p{
 
 
 }
-.biografia_title{
-    text-align: center;
-    margin-bottom: 30px;
+/* linea de tiempo*/
+.line_time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linea_tiempo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
 
+}
+.container_line_time{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    max-width: 870px;
+    
 
+}
+.linea{
+    width: 2px;
+    background-color: #000;
+    border-radius: 12px;
+}
+.item_line_time{
+    background-color: #eee;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.linea_tiempo time{
+    background-color: var(--color_secundario);
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--color_principal);
+}
+/*seccion proyectos*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.container_proyect{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.proyecto{
+    padding: 40px;
+    background-color:#eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.img_proyect{
+    width: 100%;
+    height:400px ;
+}
+.btn_proyecto{
+    width: fit-content;
+    padding: 10px 40px;
+    background-color:transparent;
+    
+    cursor: pointer;
+    transition:background-color .3s ease;
+
+}
+
+.btn_proyecto:hover{
+    background-color:var(--color_secundario);
+}
+.btn_proyecto a{
+    color: #000;
+    font-size: 17px;
+}
+.btn_proyecto:hover a{
+    color: var(--color_principal);
 }
