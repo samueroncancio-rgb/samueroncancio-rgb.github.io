@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+html{
+    font-size: 62.5%;
+}
 :root{
     --color_principal:#fff;
     --color_secundario:#607d3b;
@@ -19,33 +22,43 @@ a{
     text-decoration: none;
 }
 h1{
-    font-size: 60px;
+    font-size: 6rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 3rem;
 }
 p{
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 h4{
-    font-size: 20px;
+    font-size: 2rem;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+section{
+    scroll-margin-top: 10rem;
 }
 /*clases globales*/
 .title{
     text-align: center;
-    margin: 40px 0 ;
+    margin-bottom: 3rem;
 }
 .title::after{
     content: "";
     display: block;
-    width: 100px;
-    height: 3px;
+    width: 10rem;
+    height: 0.3rem;
     background-color: var(--color_secundario);
-    margin: 10px auto 0;
-    border-radius: 5px;
+    margin: 1rem auto 0;
+    border-radius: 0.5rem;
 }
 
 /* seccion header*/
@@ -58,18 +71,20 @@ h4{
 
 }
 .barra_navegacion{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color:var(--color_secundario);
+    align-items: center;
+    padding: 2.5rem;
 
 }
 .links{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
-    gap: 20px;
+    gap: 2rem;
     list-style: none;
-    font-size: 18px;
+    font-size: 1.8rem;
 
 }
 .link {
@@ -84,11 +99,11 @@ h4{
 .link::after{
     content:'' ;
     display: block;
-    height: 3px;
+    height: 0.3rem;
     width: 0;
     background-color: var(--color_principal);
-    margin-top: 3px;
-    border-radius: 10px;
+    margin-top: 0.3rem;
+    border-radius: 1rem;
     transition: width .3s ease;
 
 }
@@ -96,10 +111,22 @@ h4{
     width: 100%;
 }
 
+.menu{
+   padding: 1rem;
+   width: fit-content;
+   background-color: transparent;
+   border: 0.1rem solid var(--color_principal);
+   color: var(--color_principal);
+   border-radius: 0.4rem;
+   display: none;
+}
+.fa-bars{
+    font-size: 18px;
+}
 /* seccion inicio*/
 .inicio{
-    margin: top 70px;;
-    padding: 80px ;
+    margin: top 7rem;;
+    padding: 8rem ;
     display: flex;
     justify-content: space-around;
     background-color: #eee;
@@ -107,21 +134,22 @@ h4{
 
 
 
+
 .inicio_info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
+    gap: 2rem;
+    max-width: 60rem;
 
 }
 .social_media{
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 .link_social_media{
-    height: 40px;
-    width: 40px;
-    border: 1px solid #000;
+    height: 4rem;
+    width: 4rem;
+    border: 0.1rem solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,10 +160,10 @@ h4{
 }
 .link_social_media:hover{
     opacity:0.9;
-    transform: translateY(-10px);
+    transform: translateY(-10rem);
 }
 .fa-brands{
-    font-size: 22px;
+    font-size: 2.2rem;
     color:var(--color_principal);
 
 
@@ -157,14 +185,15 @@ h4{
 .btn_contact{
     display: inline-block;
     width: fit-content;
-    padding: 10px 20px;
-    border: 2px solid #000;
+    padding: 1rem 2rem;
+    border: 0.2rem solid #000;
     background-color:transparent;
     transition: background-color .3s;
+    border-radius: 12rem;
 
 }
 .btn_contact a{
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #000;
 }
 .btn_contact:hover{
@@ -175,8 +204,8 @@ h4{
     color:var(--color_principal);
 }
 .inicio_img img{
-    height: 350px;
-    width: 350px;
+    height: 35rem;
+    width: 35rem;
     border-radius: 50%;
 }
 /*biografia seccion*/
@@ -184,14 +213,14 @@ h4{
 
 .biografia_section{
     background-color:#eee;
-    padding: 50px 20px;
-    max-width: 900px;
+    padding: 5rem 2rem;
+    max-width: 90rem;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border-left:4px solid var(--color_secundario);
+    gap: 2rem;
+    border-left:0.4rem solid var(--color_secundario);
 
 
 }
@@ -206,57 +235,57 @@ h4{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
     
 
 }
 .container_line_time{
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     justify-content: center;
-    max-width: 870px;
+    max-width: 87rem;
     
 
 }
 .linea{
-    width: 2px;
+    width: 0.2rem;
     background-color: #000;
-    border-radius: 12px;
+    border-radius: 1.2rem;
 }
 .item_line_time{
     background-color: #eee;
-    padding: 40px;
-    border-radius: 15px;
+    padding: 4rem;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 .linea_tiempo time{
     background-color: var(--color_secundario);
-    padding: 8px;
-    border-radius: 8px;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
     color: var(--color_principal);
 }
 /*seccion proyectos*/
 .proyectos{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     align-items: center;
 }
 .container_proyect{
-    max-width: 900px;
+    max-width: 90rem;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 
 }
 .proyecto{
-    padding: 40px;
+    padding: 4rem;
     background-color:#eee;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 .img_proyect{
     max-width: 100%;
@@ -264,8 +293,9 @@ h4{
 }
 .btn_proyecto{
     width: fit-content;
-    padding: 10px 40px;
+    padding: 1rem 4rem;
     background-color:transparent;
+    border-radius: 12rem;
     
     cursor: pointer;
     transition:background-color .3s ease;
@@ -277,7 +307,7 @@ h4{
 }
 .btn_proyecto a{
     color: #000;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 .btn_proyecto:hover a{
     color: var(--color_principal);
@@ -288,11 +318,11 @@ h4{
    
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
     align-items: center;
 }
 .gallery_container{
-    max-width: 900px;
+    max-width: 90rem;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -300,7 +330,7 @@ h4{
 }
 .gallery_subcontainer{
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 
 }
 .gallery_item{
@@ -321,9 +351,9 @@ h4{
     background-color: var(--color_secundario);
     color: var(--color_principal);
     border: none;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
 
 }
 .prev{
@@ -337,27 +367,27 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
 }
 
 form{
     width: 40%;
-    max-width: 900px;
-    padding: 40px;
-    border-radius: 15px;
+    max-width: 90rem;
+    padding: 4rem;
+    border-radius: 1.5rem;
     background-color:#eee;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap: 1rem;
+    margin-bottom: 3rem;
 
 }
 form h3{
     text-align: center;
 }
 input,textarea{
-    padding: 10px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1.6rem;
     resize: none;
 
 }
@@ -378,9 +408,14 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     background-color: #000;
     color: var(--color_principal);
-    padding: 20px;
+    padding: 2rem;
 
+}
+/*diseño responsive*/
+@media screen and (max-width) {
+    
+    
 }
