@@ -1,0 +1,53 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#7fb183;
+
+}
+.barra-nevegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:3rem;
+    gap: 1rem;
+    color: bisque;
+    font-size: 1.2rem;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+.titulo span img{
+    width: 6rem;
+    border-radius: 20%;
+}
+.tienda{
+    background-color:#f2f1f7;
+}
+
+.grid {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items:center;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+.articulos img{
+    width: 14rem;
+}
+
+
+
