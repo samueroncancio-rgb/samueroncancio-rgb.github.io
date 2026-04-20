@@ -10,6 +10,8 @@ html{
 :root{
     --color_principal:#fff;
     --color_secundario:#607d3b;
+    --color_terciario:#eee;
+    --color_negro:#000;
 
 }
 
@@ -37,6 +39,10 @@ h4{
     font-size: 2rem;
 
 }
+label{
+    font-size: 1.8rem;
+}
+
 
 main{
     display: flex;
@@ -59,6 +65,10 @@ section{
     background-color: var(--color_secundario);
     margin: 1rem auto 0;
     border-radius: 0.5rem;
+}
+
+.max_width{
+    max-width: 90rem;
 }
 
 /* seccion header*/
@@ -88,7 +98,7 @@ section{
 
 }
 .link {
-    color: #000;
+    color: var(--color_negro);
     transition: color .3s ease;
 
 }
@@ -125,11 +135,11 @@ section{
 }
 /* seccion inicio*/
 .inicio{
-    margin: top 7rem;;
+    margin-top: 7rem;;
     padding: 8rem ;
     display: flex;
     justify-content: space-around;
-    background-color: #eee;
+    background-color: var(--color_terciario);
 }
 
 
@@ -149,7 +159,7 @@ section{
 .link_social_media{
     height: 4rem;
     width: 4rem;
-    border: 0.1rem solid #000;
+    border: 0.1rem solid var(--color_negro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +170,7 @@ section{
 }
 .link_social_media:hover{
     opacity:0.9;
-    transform: translateY(-10rem);
+    transform: translateY(-1rem);
 }
 .fa-brands{
     font-size: 2.2rem;
@@ -186,7 +196,7 @@ section{
     display: inline-block;
     width: fit-content;
     padding: 1rem 2rem;
-    border: 0.2rem solid #000;
+    border: 0.2rem solid var(--color_negro);
     background-color:transparent;
     transition: background-color .3s;
     border-radius: 12rem;
@@ -194,7 +204,7 @@ section{
 }
 .btn_contact a{
     font-size: 1.5rem;
-    color: #000;
+    color: var(--color_negro);
 }
 .btn_contact:hover{
     background-color: #556b2f;
@@ -212,9 +222,9 @@ section{
 
 
 .biografia_section{
-    background-color:#eee;
+    background-color:var(--color_terciario);
     padding: 5rem 2rem;
-    max-width: 90rem;
+    
     margin: auto;
     border-radius: 1.5rem;
     display: flex;
@@ -249,11 +259,11 @@ section{
 }
 .linea{
     width: 0.2rem;
-    background-color: #000;
+    background-color: var(--color_negro);
     border-radius: 1.2rem;
 }
 .item_line_time{
-    background-color: #eee;
+    background-color: var(--color_terciario);
     padding: 4rem;
     border-radius: 1.5rem;
     display: flex;
@@ -265,6 +275,7 @@ section{
     padding: 0.8rem;
     border-radius: 0.8rem;
     color: var(--color_principal);
+    font-size: 1.5rem;
 }
 /*seccion proyectos*/
 .proyectos{
@@ -274,22 +285,27 @@ section{
     align-items: center;
 }
 .container_proyect{
-    max-width: 90rem;
-    display: flex;
-    flex-direction: column;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 3rem;
 
 }
 .proyecto{
     padding: 4rem;
-    background-color:#eee;
+    background-color:var(--color_terciario);
     display: flex;
     flex-direction: column;
+    border-radius: 1.2rem;
     gap: 1.5rem;
+    flex: 1;
 }
 .img_proyect{
-    max-width: 100%;
-    height:auto ;
+    
+    width: 100%;
+    height:25rem;
+    object-fit: cover;
+    object-position: center;
 }
 .btn_proyecto{
     width: fit-content;
@@ -299,6 +315,7 @@ section{
     
     cursor: pointer;
     transition:background-color .3s ease;
+    margin-top: auto;
 
 }
 
@@ -306,7 +323,7 @@ section{
     background-color:var(--color_secundario);
 }
 .btn_proyecto a{
-    color: #000;
+    color: var(color_negro);
     font-size: 1.7rem;
 }
 .btn_proyecto:hover a{
@@ -322,7 +339,7 @@ section{
     align-items: center;
 }
 .gallery_container{
-    max-width: 90rem;
+    
     position: relative;
     display: flex;
     overflow: hidden;
@@ -371,11 +388,11 @@ section{
 }
 
 form{
-    width: 40%;
-    max-width: 90rem;
+    width: 100%;
+    
     padding: 4rem;
     border-radius: 1.5rem;
-    background-color:#eee;
+    background-color:var(--color_terciario);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -384,6 +401,7 @@ form{
 }
 form h3{
     text-align: center;
+    margin-bottom: 1rem;
 }
 input,textarea{
     padding: 1rem;
@@ -409,13 +427,70 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #000;
+    background-color: var(--color_negro);
     color: var(--color_principal);
     padding: 2rem;
 
 }
 /*diseño responsive*/
-@media screen and (max-width) {
+@media screen and (max-width:480px) {
+   h1{
+    font-size: 5rem;
+
+   } 
+   h2 {
+    font-size: 2rem;
+   } 
+   h3{
+    font-size: 1.8;
+   }
+   h4{
+    font-size: 1.4rem;
+   }
+   p,label{
+    font-size: 1.2rem;
+   }
+   
+   /*clases globales*/
+   .max_width{
+    max-width: 30rem;
+   }
+   
+   /*header seccion*/
+   .links{
+    display: none;
+   }
+
+   .menu{
+    display: block;
+   }
+
+   /*inicio seccion*/
+   .inicio{
+    flex-direction: column;
+    padding: 4rem;
+   }
+   .inicio_info{
+    align-items: center;
+    text-align: center;
+
+   }
+   .inicio_img{
+    display: none;
+   }
+
+   /*gallery seccion*/
+   .btn{
+    padding: 0.5rem 0.75rem;
     
-    
+   }
+   
+
+   /*contact*/
+   input,textarea{
+    font-size: 1.2rem;
+   }
+   
+
 }
+
