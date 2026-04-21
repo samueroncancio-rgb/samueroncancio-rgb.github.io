@@ -1,0 +1,61 @@
+/*diseño responsive*/
+@media screen and (max-width:480px) {
+   h1{
+    font-size: 5rem;
+
+   } 
+   h2 {
+    font-size: 2rem;
+   } 
+   h3{
+    font-size: 1.8;
+   }
+   h4{
+    font-size: 1.4rem;
+   }
+   p,label{
+    font-size: 1.2rem;
+   }
+   
+   /*clases globales*/
+   .max_width{
+    max-width: 30rem;
+   }
+   
+   /*header seccion*/
+   .links{
+    display: none;
+   }
+
+   .menu{
+    display: block;
+   }
+
+   /*inicio seccion*/
+   .inicio{
+    flex-direction: column;
+    padding: 4rem;
+   }
+   .inicio_info{
+    align-items: center;
+    text-align: center;
+
+   }
+   .inicio_img{
+    display: none;
+   }
+
+   /*gallery seccion*/
+   .btn{
+    padding: 0.5rem 0.75rem;
+    
+   }
+   
+
+   /*contact*/
+   input,textarea{
+    font-size: 1.2rem;
+   }
+   
+
+}

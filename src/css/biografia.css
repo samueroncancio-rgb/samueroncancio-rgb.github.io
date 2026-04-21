@@ -1,0 +1,15 @@
+/*biografia seccion*/
+
+
+.biografia_section{
+    background-color:var(--color_terciario);
+    padding: 5rem 2rem;
+    
+    margin: auto;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left:0.4rem solid var(--color_secundario);
+
+}

@@ -1,0 +1,11 @@
+/* footer seccion*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color_negro);
+    color: var(--color_principal);
+    padding: 2rem;
+
+}

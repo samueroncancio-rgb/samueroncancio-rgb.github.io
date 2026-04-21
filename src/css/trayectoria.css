@@ -1,0 +1,43 @@
+* Trayectoria*/
+.line_time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linea_tiempo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    
+
+}
+.container_line_time{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 87rem;
+    
+
+}
+.linea{
+    width: 0.2rem;
+    background-color: var(--color_negro);
+    border-radius: 1.2rem;
+}
+.item_line_time{
+    background-color: var(--color_terciario);
+    padding: 4rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.linea_tiempo time{
+    background-color: var(--color_secundario);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    color: var(--color_principal);
+    font-size: 1.5rem;
+}

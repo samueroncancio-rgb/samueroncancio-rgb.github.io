@@ -38,6 +38,11 @@ body{
 }
 .tienda{
     background-color:#f2f1f7;
+    padding: 2rem;
+}
+.tienda h2{
+    margin: 1.5rem;
+    font-size:2.2rem;
 }
 
 .grid {
@@ -49,8 +54,21 @@ body{
     margin: 1.5rem;
 }
 .articulos img{
-    width: 14rem;
+    width: 20rem;
+    height: 20rem;
 }
+.botones{
+    border-radius:3rem;
+    width: 5rem;
+    height: 1.8rem;
+    background-color: #ecea77;
+    border: none;
+}
+.botones:hover{
+    background-color: #888;
+    color: bisque;
+}
+
 
 
 

@@ -1,0 +1,62 @@
+/* seccion header*/
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+.barra_navegacion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--color_secundario);
+    align-items: center;
+    padding: 2.5rem;
+
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.8rem;
+
+}
+.link {
+    color: var(--color_negro);
+    transition: color .3s ease;
+
+}
+.link:hover{
+    color: var(--color_principal);
+}
+
+.link::after{
+    content:'' ;
+    display: block;
+    height: 0.3rem;
+    width: 0;
+    background-color: var(--color_principal);
+    margin-top: 0.3rem;
+    border-radius: 1rem;
+    transition: width .3s ease;
+
+}
+.link:hover::after{
+    width: 100%;
+}
+
+.menu{
+   padding: 1rem;
+   width: fit-content;
+   background-color: transparent;
+   border: 0.1rem solid var(--color_principal);
+   color: var(--color_principal);
+   border-radius: 0.4rem;
+   display: none;
+}
+.fa-bars{
+    font-size: 18px;
+}
