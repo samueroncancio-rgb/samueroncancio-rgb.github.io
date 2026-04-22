@@ -6,7 +6,7 @@
 @import url(./gallery.css);
 @import url(./contactos.css);
 @import url(./footer.css);
-@import url(./responsive.css);
+
 
 
 
@@ -101,7 +101,7 @@ section{
     max-width: 30rem;
 }
 
-/*diseño responsive*/
+/*diseño responsive tablet*/
 @media screen and (min-width : 576px){
     h1{
         font-size: 6rem;
@@ -130,6 +130,10 @@ section{
     .inicio-img{
         height: 30rem;
         width:  30rem; 
+    }
+    .gallery-container{
+   
+     grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
     }
 
 }
@@ -214,4 +218,5 @@ section{
     footer{
         text-align: left;
     }
+
 }

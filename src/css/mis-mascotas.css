@@ -6,68 +6,135 @@
     list-style: none;
     
 }
-body{
-    
+
+html{
+    font-size: 62.5%;
 }
+body{
+    margin-top: 11rem;
+    background-color:#f2f1f7;   
+}
+
+a{
+    font-size: 1.8rem;
+}
+
+h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+
+
 
 .header{
+    width: 100%;
+    background-color:#7fb183;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.barra-navegacion{
     display: flex;
     justify-content: space-between;
-    background-color:#7fb183;
-
-}
-.barra-nevegacion{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding:3rem;
-    gap: 1rem;
-    color: bisque;
-    font-size: 1.2rem;
+    padding: 2.5rem;
 }
+
 .titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
 
 }
 .titulo span img{
     width: 6rem;
     border-radius: 20%;
 }
-.tienda{
-    background-color:#f2f1f7;
-    padding: 2rem;
-}
-.tienda h2{
-    margin: 1.5rem;
-    font-size:2.2rem;
+
+.links{
+    display: flex;
+    gap: 5rem;
 }
 
-.grid {
+.link a{
+    text-decoration: none;
+    color: #000;
+    transition: color .3s ease;
+}
+
+.links a:hover{
+    color: #fff;
+}
+
+
+.tienda{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+}
+.tienda h2{
+    margin: 1.2rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.container {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items:center;
-    gap: 1rem;
-    margin: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 3rem;
+    max-width: 100rem;
+}
+
+.articulos{
+    max-width:30rem;
+    box-shadow: 0 0 5px #000;
+    border-radius: 1.2rem;
 }
 .articulos img{
-    width: 20rem;
-    height: 20rem;
+    width:100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius:1.2rem ;
+    border-top-right-radius:1.2rem ;
 }
+
+.articulos-info{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+
 .botones{
-    border-radius:3rem;
-    width: 5rem;
-    height: 1.8rem;
+    border-radius:1.2rem;
+    width: 100%;
     background-color: #ecea77;
+    padding: 1rem 0;
     border: none;
+    transition: color .3s ease, background-color .3s ease ;
+    cursor: pointer;
 }
 .botones:hover{
     background-color: #888;
     color: bisque;
 }
+
 
 
 
