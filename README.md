@@ -28,20 +28,7 @@ Sitio web estático (portafolio + proyecto de tienda de mascotas) creado con HTM
         - `script.js` — script principal (menú, overlay, alert de bienvenida).
         - `mascotas.js` — script usado por la vista de mascotas (toggle del menú en esa vista).
 
-Ejemplo rápido:
 
-```
-index.html
-src/
-    css/
-        principal/
-        pets/
-    views/
-        mis-mascotas.html
-        script.js
-        mascotas.js
-public/
-    img/
 ```
 
 ## Cómo ejecutar el proyecto localmente
@@ -90,15 +77,9 @@ Si quieres que yo implemente alguno de los siguientes puntos, dime cuál y lo ha
 
 ## Licencia
 
-Pon aquí tu licencia preferida (por ejemplo, `MIT`) o indica que todos los derechos están reservados.
+- MIT
 
 ---
 
-Si quieres, puedo:
 
-- Generar capturas de pantalla y añadirlas al README.
-- Añadir un badge con la licencia o estado del build.
-- Crear un pequeño script npm para servir el sitio (`http-server`).
-
-Dime qué prefieres y lo implemento.
 
